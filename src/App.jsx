@@ -8,7 +8,7 @@ import { Works } from "./components/Works";
 import { Teams } from "./components/Teams";
 import { Testimonials } from "./components/Testimonials";
 import { Pricing } from "./components/Pricing";
-import { Blog } from "./components/Blog";
+import { Blog } from "./components/Blog/Blog";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 

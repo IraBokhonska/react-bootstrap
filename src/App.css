@@ -614,17 +614,17 @@ textarea {
   font-size: 100%;
 }
 
-.works-block .pagination {
+.pagination {
   justify-content: center;
   margin: 25px 0 0;
 }
 
-.works-block .pagination .page-item.active .page-link {
+.pagination .page-item.active .page-link {
   background: #f64b4b;
   border-color: #f64b4b;
 }
 
-.works-block .pagination .page-item .page-link {
+.pagination .page-item .page-link {
   padding: 8px 15px 10px;
 }
 
@@ -841,11 +841,18 @@ textarea {
   margin-bottom: 50px;
 }
 
+.blog-block .column {
+  display: flex;
+}
+
 .blog-block .row:last-child {
   margin-bottom: 0;
 }
 
 .blog-block .holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #fff;
   padding: 15px;
   transition: box-shadow 0.3s linear;
@@ -860,10 +867,14 @@ textarea {
 }
 
 .blog-block .card-body {
-  padding: 0;
+  padding: 10px 0;
+  flex: 1 1 auto;
 }
 
 .blog-block img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   margin: 0 0 15px;
 }
 
@@ -904,6 +915,8 @@ textarea {
 .blog-block .meta .category a:hover {
   color: #f64b4b;
 }
+
+/*----------------- contact-------------------*/
 
 .contact-block {
   position: relative;

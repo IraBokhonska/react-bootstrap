@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Pagination from "react-bootstrap/Pagination";
 
 import portfolio1 from "../assets/images/img1.jpg";
 import portfolio2 from "../assets/images/img2.jpg";
@@ -81,16 +80,6 @@ const worksData = [
   },
 ];
 
-let active = 1;
-let items = [];
-for (let number = 1; number <= 5; number++) {
-  items.push(
-    <Pagination.Item key={number} active={number === active}>
-      {number}
-    </Pagination.Item>
-  );
-}
-
 export const Works = () => {
   return (
     <section id="works" className="block works-block">
@@ -116,7 +105,6 @@ export const Works = () => {
             );
           })}
         </Row>
-        <Pagination>{items}</Pagination>
       </Container>
     </section>
   );
