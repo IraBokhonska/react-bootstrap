@@ -56,10 +56,10 @@ export const Services = () => {
           <h2>Our services</h2>
           <div className="subtitle">services we provide</div>
         </div>
-        <Row>
+        <Row className="container">
           {servicesData.map((services) => {
             return (
-              <Col key={services.id} sm={4} className="holder">
+              <Col key={services.id} md={4} sm={6} className="holder">
                 <div className="icon">
                   <i className={services.icon}></i>
                 </div>

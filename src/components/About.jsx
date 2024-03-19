@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-import imgAbout from "../assets/images/img1.jpg";
+import imgAbout from "../assets/images/about.jpg";
 
 export const About = () => {
   const html = 80;
@@ -20,8 +20,8 @@ export const About = () => {
       </div>
       <Container>
         <Row>
-          <Col sm={6}>
-            <Image src={imgAbout} />
+          <Col sm={6} className="image">
+            <Image src={imgAbout} alt="about-img" />
           </Col>
           <Col sm={6}>
             <p>

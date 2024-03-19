@@ -4,15 +4,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
-import portfolio1 from "../assets/images/img1.jpg";
-import portfolio2 from "../assets/images/img2.jpg";
-import portfolio3 from "../assets/images/img3.jpg";
-import portfolio4 from "../assets/images/img4.jpg";
-import portfolio5 from "../assets/images/img5.jpg";
-import portfolio6 from "../assets/images/img6.jpg";
-import portfolio7 from "../assets/images/img7.jpg";
-import portfolio8 from "../assets/images/img8.jpg";
-import portfolio9 from "../assets/images/img9.jpg";
+import portfolio1 from "../assets/images/portfolio1.jpg";
+import portfolio2 from "../assets/images/portfolio2.jpg";
+import portfolio3 from "../assets/images/portfolio3.jpg";
+import portfolio4 from "../assets/images/portfolio4.jpg";
+import portfolio5 from "../assets/images/portfolio5.jpg";
+import portfolio6 from "../assets/images/portfolio6.jpg";
+import portfolio7 from "../assets/images/portfolio7.jpg";
+import portfolio8 from "../assets/images/portfolio8.jpg";
+import portfolio9 from "../assets/images/portfolio9.jpg";
 
 const worksData = [
   {
@@ -91,10 +91,14 @@ export const Works = () => {
         <Row className="portfoliolist">
           {worksData.map((work) => {
             return (
-              <Col key={work.id} sm={4}>
+              <Col key={work.id} lg={4} sm={6} className="portfolio">
                 <div className="portfolio-wrapper">
                   <a href={work.link}>
-                    <Image src={work.image} />
+                    <Image
+                      src={work.image}
+                      alt="portfolio-image"
+                      className="image"
+                    />
                     <div className="label text-center">
                       <h3>{work.title}</h3>
                       <p>{work.subtitle}</p>

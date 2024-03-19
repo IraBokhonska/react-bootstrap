@@ -112,12 +112,12 @@ export const Teams = () => {
           <h2>Our teams</h2>
           <div className="subtitle">some of our experts</div>
         </div>
-        <Row>
+        <Row className="teams-list">
           {teamsData.map((team) => {
             return (
-              <Col key={team.id} sm={3}>
+              <Col className="teams-card" key={team.id} sm={4} lg={3}>
                 <div className="image">
-                  <Image src={team.image} alt="image" />
+                  <Image src={team.image} alt="teams-image" />
                   <div className="overlay">
                     <div className="socials">
                       <ul>

@@ -12,7 +12,7 @@ export const BlogList = ({ blogs, loading }) => {
     <Row>
       {blogs.map((blog, index) => {
         return (
-          <Col className="column" sm={4} key={index}>
+          <Col className="column" sm={6} lg={4} key={index}>
             <div className="holder">
               <Card>
                 <Card.Img variant="top" src={blog.urlToImage} />
