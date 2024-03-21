@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 
 export const Footer = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const today = new Date();
+  const year = today.getFullYear();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -24,7 +26,7 @@ export const Footer = () => {
   return (
     <Container fluid>
       <div className="copyright">
-        &copy; 2022 Corporate. All Right Reserved.
+        &copy; {year} Corporate. All Right Reserved.
       </div>
       <div className="socials">
         <ul>

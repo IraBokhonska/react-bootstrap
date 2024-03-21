@@ -51,7 +51,7 @@ const servicesData = [
 export const Services = () => {
   return (
     <section id="services" className="block services-block">
-      <Container fluid>
+      <Container>
         <div className="title-holder">
           <h2>Our services</h2>
           <div className="subtitle">services we provide</div>

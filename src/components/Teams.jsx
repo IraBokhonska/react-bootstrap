@@ -42,7 +42,7 @@ const teamsData = [
     fbLink: "https://www.facebook.com",
     twitterLink: "https://www.twitter.com",
     linkedinLink: "https://www.linkedin.com",
-    name: "Nicholas Perry",
+    name: "Sarah Wills",
     designation: "UX Designer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
@@ -53,7 +53,7 @@ const teamsData = [
     fbLink: "https://www.facebook.com",
     twitterLink: "https://www.twitter.com",
     linkedinLink: "https://www.linkedin.com",
-    name: "Sarah Wills",
+    name: "Nicholas Perry",
     designation: "Developer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
@@ -115,7 +115,7 @@ export const Teams = () => {
         <Row className="teams-list">
           {teamsData.map((team) => {
             return (
-              <Col className="teams-card" key={team.id} sm={4} lg={3}>
+              <Col className="teams-card" key={team.id} sm={4} md={3}>
                 <div className="image">
                   <Image src={team.image} alt="teams-image" />
                   <div className="overlay">

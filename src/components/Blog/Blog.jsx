@@ -9,7 +9,7 @@ export const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [blogsPerPage] = useState(3);
+  const [blogsPerPage, setBlogsPerPage] = useState(3);
 
   useEffect(() => {
     const getBlogs = async () => {
@@ -24,6 +24,23 @@ export const Blog = () => {
     };
 
     getBlogs();
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 992) {
+        setBlogsPerPage(2);
+      } else {
+        setBlogsPerPage(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const lastBlogIndex = currentPage * blogsPerPage;

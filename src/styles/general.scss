@@ -371,6 +371,15 @@ textarea {
   border-bottom: 1px solid #e6e6e6;
 }
 
+@media (min-width: 1025px) {
+  a[href^="tel"],
+  a[href^="skype"],
+  a[href^="sms"] {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 1023px) {
   body {
     font-size: 15px;
@@ -410,5 +419,37 @@ textarea {
 @media (max-width: 768px) {
   .block {
     padding: 40px 0 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .title-holder {
+    margin: 0 0 20px;
+  }
+
+  .go-top {
+    width: 40px;
+    height: 40px;
+  }
+
+  .go-top:before {
+    width: 11px;
+    height: 11px;
+  }
+
+  .pagetitle {
+    padding: 30px 0;
+    margin: 56px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-fluid {
+    padding: 0 12px;
   }
 }
