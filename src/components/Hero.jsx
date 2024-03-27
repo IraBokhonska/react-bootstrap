@@ -11,7 +11,7 @@ const heroData = [
     image: imgHero1,
     title: "The perfect design for your website",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit dicta nulla. Consequuntur obcaecati officiis, labore doloribus non tempore impedit consequatur ab dolor. Explicabo quam repellendus vero omnis, nisi odio!",
+      "crafting the perfect design for your website involves a delicate balance of aesthetics and functionality. From intuitive navigation to visually stunning layouts, the perfect design harmonizes form and function to leave a lasting impression. By understanding your audience's needs and aspirations, and infusing your brand's essence into every pixel, you can create a website drives meaningful engagement and results.",
     link: "https://www.google.com",
   },
   {
@@ -19,7 +19,7 @@ const heroData = [
     image: imgHero2,
     title: "Start Your Future Financial Plan",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit dicta nulla. Consequuntur obcaecati officiis, labore doloribus non tempore impedit consequatur ab dolor. Explicabo quam repellendus vero omnis, nisi odio!",
+      "Embarking on your future financial plan is akin to laying the groundwork for a journey towards financial security and freedom. It's a proactive step towards shaping the life you envision, ensuring stability, and achieving your long-term goals. By starting your financial plan today, you empower yourself to make informed decisions, cultivate smart saving and investing habits, and navigate potential challenges with confidence.",
     link: "https://www.facebook.com",
   },
   {
@@ -27,7 +27,7 @@ const heroData = [
     image: imgHero3,
     title: "Enjoy the Difference",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit dicta nulla. Consequuntur obcaecati officiis, labore doloribus non tempore impedit consequatur ab dolor. Explicabo quam repellendus vero omnis, nisi odio!",
+      "encapsulates the beauty of diversity and the richness it brings to our lives. Embracing differences in perspectives, cultures, and experiences fosters understanding, creativity, and growth. By embracing and appreciating differences, we unlock opportunities for connection, empathy, and collective progress.",
     link: "https://www.twitter.com",
   },
 ];

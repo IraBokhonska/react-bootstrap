@@ -371,6 +371,10 @@ textarea {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.modal-dialog {
+  margin-top: 80px;
+}
+
 @media (min-width: 1025px) {
   a[href^="tel"],
   a[href^="skype"],
@@ -451,5 +455,33 @@ textarea {
 @media (max-width: 480px) {
   .container-fluid {
     padding: 0 12px;
+  }
+}
+
+// -------------------------form----------------
+.form {
+  &-error {
+    margin-top: 15px;
+    margin-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: #f64b4b;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+  // .error {
+  //   border: 1px solid #f64b4b;
+  // }
+}
+
+@media (max-width: 768px) {
+  .form {
+    .col-sm-12 {
+      padding: 0px;
+    }
   }
 }

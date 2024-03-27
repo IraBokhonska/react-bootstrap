@@ -19,7 +19,7 @@ const worksData = [
     id: 1,
     link: "https://www.google.com",
     image: portfolio1,
-    title: "Lonely Path",
+    title: "Finance",
     subtitle: "Web Design",
   },
   {
@@ -27,13 +27,13 @@ const worksData = [
     link: "https://www.google.com",
     image: portfolio2,
     title: "Lonely Path",
-    subtitle: "Web Design",
+    subtitle: "Photography",
   },
   {
     id: 3,
     link: "https://www.google.com",
     image: portfolio3,
-    title: "Photographer Girl",
+    title: "Corporate brands",
     subtitle: "Branding",
   },
   {

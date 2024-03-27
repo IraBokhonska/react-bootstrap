@@ -667,6 +667,20 @@
 
   .contact-form {
     margin: 0 0 60px;
+    // span {
+    //   font-size: 14px;
+    //   padding: 3px;
+    //   color: #f64b4b;
+    //   display: none;
+    // }
+
+    // input:invalid[focused="true"] {
+    //   border: 2px solid #f64b4b;
+    // }
+
+    // input:invalid[focused="true"] ~ span {
+    //   display: block;
+    // }
   }
 
   iframe {
@@ -690,6 +704,16 @@
       display: inline-block;
       vertical-align: top;
       width: 32%;
+      transition: 0.3s;
+      a {
+        color: #333333;
+        &:hover {
+          color: #d10a0a;
+        }
+      }
+      &:hover {
+        color: #d10a0a;
+      }
     }
 
     .fas {

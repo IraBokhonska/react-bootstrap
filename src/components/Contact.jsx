@@ -1,9 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
+import  ContactForm  from "./Form/ContactForm";
 
 export const Contact = () => {
   return (
@@ -13,39 +10,7 @@ export const Contact = () => {
           <h2>Contact us</h2>
           <div className="subtitle">get connected with us</div>
         </div>
-        <Form className="contact-form">
-          <Row>
-            <Col sm={4}>
-              <Form.Control
-                type="text"
-                placeholder="Enter your full name"
-                required
-              />
-            </Col>
-            <Col sm={4}>
-              <Form.Control
-                type="email"
-                placeholder="Enter your email address"
-                required
-              />
-            </Col>
-            <Col sm={4}>
-              <Form.Control
-                type="tel"
-                placeholder="Enter your contact number"
-                required
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={12}>
-              <Form.Control as="textarea" placeholder="Enter your message" />
-            </Col>
-          </Row>
-          <div className="btn-holder">
-            <Button type="submit">Submit</Button>
-          </div>
-        </Form>
+        <ContactForm />
       </Container>
       <div className="google-map">
         <iframe
@@ -54,22 +19,24 @@ export const Contact = () => {
         ></iframe>
       </div>
       <Container fluid>
-        <div className="contact-info">
+        <address className="contact-info">
           <ul>
             <li>
-              <i className="fas fa-envelope"></i>
-              hello@domain.com
+              <a href="mailto: corporate@service.com">
+                <i className="fas fa-envelope"></i> corporate@service.com
+              </a>
             </li>
             <li>
-              <i className="fas fa-phone"></i>
-              000-000-0000
+              <a href="tel: +001 356-868-2454">
+                <i className="fas fa-phone"></i> +001 356-868-2454
+              </a>
             </li>
             <li>
               <i className="fas fa-map-marker-alt"></i>
               London, United Kingdom
             </li>
           </ul>
-        </div>
+        </address>
       </Container>
     </section>
   );

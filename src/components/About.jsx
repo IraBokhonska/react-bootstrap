@@ -25,16 +25,17 @@ export const About = () => {
           </Col>
           <Col sm={6}>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Excepturi voluptas delectus ducimus a, quam nisi magnam accusamus
-              exercitationem perspiciatis, aspernatur animi eius molestias
-              obcaecati unde vel cumque molestiae perferendis non.
+              Our company specializing in website creation. With a keen eye for
+              design, proficiency in cutting-edge technologies, and a deep
+              understanding of user experience, Corporate transform concepts
+              into captivating digital realities.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              reprehenderit assumenda illum esse recusandae a temporibus
-              deleniti laborum officia magni. Neque, minus accusantium.
-              Reprehenderit libero corporis, ab placeat itaque repellendus.
+              We serve as partners in bringing brands to life online, providing
+              tailored solutions that not only showcase products or services but
+              also engage and delight visitors. Our company works from small
+              businesses to global enterprises, tailoring individualized
+              solutions to meet the unique needs of each client.
             </p>
             <div className="progress-block">
               <h4>HTML / CSS / Javascript</h4>
