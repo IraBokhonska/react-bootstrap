@@ -29,6 +29,7 @@ function ContactForm() {
           <FormInput
             name="fullName"
             placeholder="Enter your full name"
+            type="text"
             rules={{
               required: "The field must be required!",
               minLength: { value: 5, message: "Min 5 symbols!" },
@@ -37,6 +38,7 @@ function ContactForm() {
           <FormInput
             name="phoneNumber"
             placeholder="Enter your phone number"
+            type="tel"
             rules={{
               required: "The field must be required!",
               pattern: {
@@ -48,6 +50,7 @@ function ContactForm() {
           <FormInput
             name="email"
             placeholder="Enter your email"
+            type="email"
             rules={{
               required: "The field must be required!",
               pattern: {

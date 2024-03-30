@@ -14,7 +14,7 @@ const testimonialsData = [
     id: 2,
     name: "Jasmine Perry",
     description:
-      "We will definitely work with them again for a website for our other brand.They were very good at reading between the lines and delivering what we wanted.",
+      "They were very good at reading between the lines and delivering what we wanted.",
     designation: "Marketing Manager",
   },
   {

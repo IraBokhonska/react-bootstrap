@@ -12,7 +12,6 @@ import { Pricing } from "./components/Pricing";
 import { Blog } from "./components/Blog/Blog";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import ModalStandart from "./components/Modal";
 
 function App() {
   return (
@@ -33,7 +32,6 @@ function App() {
       </main>
       <footer id="footer">
         <Footer />
-        <ModalStandart />
       </footer>
     </div>
   );

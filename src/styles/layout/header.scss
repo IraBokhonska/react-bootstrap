@@ -5,7 +5,7 @@
   right: 0;
   top: 0;
   z-index: 9999;
-  background: #fff;
+  background: $white;
   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.5s linear;
 
@@ -15,7 +15,7 @@
     background: none !important;
 
     &-brand {
-      color: #f64b4b;
+      color: $primary-red;
       text-transform: uppercase;
       font-weight: 600;
       height: auto;
@@ -42,7 +42,7 @@
           &:hover,
           &.active {
             background: none;
-            color: #f64b4b;
+            color: $primary-red;
 
             &:before {
               right: 7px;
@@ -53,7 +53,7 @@
 
           &:before {
             content: "";
-            background: #f64b4b;
+            background: $primary-red;
             height: 1px;
             position: absolute;
             bottom: 7px;
@@ -75,7 +75,7 @@
   }
   .navbar-toggler {
     padding: 1px !important;
-    background-color: #c09a64;
+    background-color: $light-brown;
   }
   .navbar-collapse {
     margin: 30px auto;
@@ -85,7 +85,7 @@
     margin: 0 auto;
   }
   .navbar-brand {
-    color: white !important;
+    color: $white !important;
   }
   .nav-link {
     margin-bottom: 10px;
@@ -95,18 +95,18 @@
     line-height: 130%;
     font-weight: 700;
 
-    border: 2px solid #c09a64;
+    border: 2px solid $light-brown;
     border-radius: 10px;
-    color: #fff !important;
+    color: $white !important;
 
     &:hover {
-      color: #c09a64 !important;
+      color: $light-brown !important;
     }
     &::before {
       display: none;
     }
   }
-  .hidden-nav{
+  .hidden-nav {
     display: none;
   }
 }

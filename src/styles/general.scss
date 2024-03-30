@@ -16,12 +16,12 @@ html {
 }
 
 body {
-  color: #333;
-  background: #fff;
+  color: $primary-black;
+  background: $white;
   font: 16px/1.6 "Muli", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: $primary-grey scale;
   font-weight: 400;
 }
 
@@ -72,7 +72,7 @@ p {
 }
 
 a {
-  color: #f64b4b;
+  color: $primary-red;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -80,7 +80,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #f41a1a;
+  color: $secondary-red;
 }
 
 ul,
@@ -130,10 +130,10 @@ ul,
       }
 
       a {
-        color: #333;
+        color: $primary-black;
 
         &:hover {
-          color: #f64b4b;
+          color: $primary-red;
         }
       }
     }
@@ -142,8 +142,8 @@ ul,
 
 .btn {
   &.btn-primary {
-    background: #f64b4b;
-    border-color: #f64b4b;
+    background: $primary-red;
+    border-color: $primary-red;
     padding: 13px 35px;
     font-size: 14px;
     line-height: 18px;
@@ -154,9 +154,9 @@ ul,
 
     &:focus,
     &:hover {
-      background: #fff;
-      border-color: #f64b4b;
-      color: #f64b4b;
+      background: $white;
+      border-color: $primary-red;
+      color: $primary-red;
     }
 
     .fas {
@@ -171,56 +171,39 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 textarea {
-  background: #fff;
-  border: 1px solid #cccccc;
+  background: $white;
+  border: 1px solid $primary-grey;
   margin: 0;
   padding: 5px 15px;
   width: 100%;
   height: 47px;
-  color: gray;
+  color: $primary-grey;
   font-size: 16px;
   line-height: 20px;
 
   &::-webkit-input-placeholder {
-    color: gray;
+    color: $primary-grey;
   }
 
   &::-moz-placeholder {
     opacity: 1;
-    color: gray;
+    color: $primary-grey;
   }
 
   &:-moz-placeholder {
-    color: gray;
+    color: $primary-grey;
   }
 
   &:-ms-input-placeholder {
-    color: gray;
+    color: $primary-grey;
   }
 
   &.placeholder {
-    color: gray;
+    color: $primary-grey;
   }
 
   &:focus {
     outline: none;
-  }
-}
-
-.newsletter-block {
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="search"],
-  textarea {
-    border: 0;
-  }
-
-  textarea {
-    height: 150px !important;
-    min-height: 150px !important;
-    resize: vertical;
-    padding: 10px 15px !important;
   }
 }
 
@@ -234,7 +217,7 @@ textarea {
   }
 
   .subtitle {
-    color: #999999;
+    color: $secondary-grey;
 
     &:before {
       content: "-";
@@ -268,8 +251,8 @@ textarea {
   a {
     width: 35px;
     height: 35px;
-    background: #fff;
-    color: #f64b4b;
+    background: $white;
+    color: $primary-red;
     border-radius: 50%;
     display: block;
     text-align: center;
@@ -278,8 +261,8 @@ textarea {
     -webkit-transition: background 0.3s linear, color 0.3s linear;
 
     &:hover {
-      background: #f64b4b;
-      color: #fff;
+      background: $primary-red;
+      color: $white;
     }
   }
 
@@ -299,9 +282,9 @@ textarea {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #f64b4b;
+  background: $primary-red;
   border-radius: 3px;
-  color: #fff;
+  color: $white;
   border: 0;
 
   &:before {
@@ -311,7 +294,7 @@ textarea {
     -webkit-transform: rotate(-45deg);
     content: "";
     border-style: solid;
-    border-color: #fff;
+    border-color: $white;
     border-width: 1px 1px 0 0;
     position: absolute;
     top: 50%;
@@ -320,32 +303,32 @@ textarea {
   }
 
   &:hover {
-    background: #f41a1a;
+    background: $secondary-red;
   }
 }
 
 .pagination {
   > li {
     &.active a {
-      background: #f64b4b;
-      border-color: #f64b4b;
+      background: $primary-red;
+      border-color: $primary-red;
 
       &:hover {
-        background: #f64b4b;
-        border-color: #f64b4b;
+        background: $primary-red;
+        border-color: $primary-red;
       }
     }
 
     > a {
-      color: #f64b4b;
+      color: $primary-red;
       transition: all 0.3s linear;
       -webkit-transition: all 0.3s linear;
       padding: 6px 15px 12px;
 
       &:hover {
-        background: #f64b4b;
-        color: #fff;
-        border-color: #f64b4b;
+        background: $primary-red;
+        color: $white;
+        border-color: $primary-red;
       }
     }
   }
@@ -353,8 +336,8 @@ textarea {
 
 .pagetitle {
   margin: 80px 0 0;
-  background: #f64b4b;
-  color: #fff;
+  background: $primary-red;
+  color: $white;
   padding: 50px 0;
 
   .title-holder {
@@ -362,25 +345,22 @@ textarea {
   }
 
   .subtitle {
-    color: #e6e6e6;
+    color: $secondary-white;
   }
 }
 
 .block {
   padding: 70px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $secondary-white;
 }
 
-.modal-dialog {
-  margin-top: 80px;
-}
-
-@media (min-width: 1025px) {
-  a[href^="tel"],
-  a[href^="skype"],
-  a[href^="sms"] {
-    cursor: default;
-    pointer-events: none;
+.modal {
+  &-header,
+  &-footer {
+    border: none;
+  }
+  &-dialog {
+    margin-top: 80px;
   }
 }
 
@@ -468,14 +448,11 @@ textarea {
     align-items: center;
     justify-content: flex-start;
 
-    color: #f64b4b;
+    color: $primary-red;
     font-size: 17px;
     line-height: 17px;
     font-weight: 400;
   }
-  // .error {
-  //   border: 1px solid #f64b4b;
-  // }
 }
 
 @media (max-width: 768px) {
