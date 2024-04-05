@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import { BlogList } from "./BlogList";
 import { PaginationList } from "./PaginationList";
 
+const API_KEY_NEWS = process.env.REACT_APP_API_KEY_NEWS;
+
 export const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -16,9 +18,8 @@ export const Blog = () => {
       setLoading(true);
 
       const response = await axios.get(
-        "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=247fce01689c485793e713c255654f06"
+        `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY_NEWS}`
       );
-      console.log(response);
       setBlogs(response.data.articles);
       setLoading(false);
     };

@@ -23,7 +23,7 @@ export const About = () => {
           <Col sm={6} className="image">
             <Image src={imgAbout} alt="about-img" />
           </Col>
-          <Col sm={6}>
+          <Col sm={6} className="about-content">
             <p>
               Our company specializing in website creation. With a keen eye for
               design, proficiency in cutting-edge technologies, and a deep
@@ -37,18 +37,20 @@ export const About = () => {
               businesses to global enterprises, tailoring individualized
               solutions to meet the unique needs of each client.
             </p>
-            <div className="progress-block">
-              <h4>HTML / CSS / Javascript</h4>
-              <ProgressBar now={html} label={`${html}%`} />
-            </div>
-            <div className="progress-block">
-              <h4>responsive</h4>
-              <ProgressBar now={responsive} label={`${responsive}%`} />
-            </div>
-            <div className="progress-block">
-              <h4>Photoshop</h4>
-              <ProgressBar now={photoshop} label={`${photoshop}%`} />
-            </div>
+            <ul className="progress-list">
+              <li className="progress-block">
+                <h4>HTML / CSS / Javascript</h4>
+                <ProgressBar now={html} label={`${html}%`} />
+              </li>
+              <li className="progress-block">
+                <h4>responsive</h4>
+                <ProgressBar now={responsive} label={`${responsive}%`} />
+              </li>
+              <li className="progress-block">
+                <h4>Photoshop</h4>
+                <ProgressBar now={photoshop} label={`${photoshop}%`} />
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>

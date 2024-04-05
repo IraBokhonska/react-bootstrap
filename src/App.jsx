@@ -4,6 +4,7 @@ import "./styles/app.scss";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
+import { Video } from "./components/Video";
 import { Services } from "./components/Services";
 import { Works } from "./components/Works";
 import { Teams } from "./components/Teams";
@@ -22,6 +23,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Video />
         <Services />
         <Works />
         <Teams />

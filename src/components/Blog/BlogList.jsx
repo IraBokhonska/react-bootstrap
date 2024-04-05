@@ -2,10 +2,11 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import { Loading } from "../Loading";
 
 export const BlogList = ({ blogs, loading }) => {
   if (loading) {
-    return <h2 className="loading">Loading...</h2>;
+    return <Loading />;
   }
 
   return (

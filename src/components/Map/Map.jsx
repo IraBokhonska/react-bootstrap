@@ -23,7 +23,7 @@ export const Map = ({ center }) => {
   }, []);
 
   return (
-    <div className="google-map">
+    <div className="google-map" id="google-map">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
