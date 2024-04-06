@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### NEWS API WORKED ONLY LOCAL!!!
+Newsapi.org,  since 22 May 2020 has changed the liberties of the free developer keys and now they reject any request using that key that is not coming from localhost. Pricing policy: https://newsapi.org/pricing
